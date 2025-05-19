@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Ruslan+Display&display=swap');
+body{
+    background: linear-gradient(to bottom, #444, #222); /* Градиентный фон */
+}
+p{
+    font-family: "Jura", sans-serif; /* Шрифт для текста */
+    color: #e0e0e0; /* Цвет текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    margin: 0; /* Убираем отступы */
+}
+header {
+    background-color: #333; /* Тёмный фон */
+    color: white; /* Белый текст */
+    padding: 20px 0; /* Отступы сверху и снизу */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 80px; /* Размер логотипа */
+    height: auto;
+    border-radius: 50%; /* Скруглённые углы */
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ffcc00; /* Жёлтый цвет при наведении */
+}
+/* Слайдер */
+.slider {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.slider__container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider__item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slider__item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Стрелки */
+.slider__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 32px;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+    transition: background 0.3s;
+}
+
+.slider__arrow--prev { left: 15px; }
+.slider__arrow--next { right: 15px; }
+
+.slider__arrow:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+/* Адаптация */
+@media (max-width: 600px) {
+    .slider__item img {
+        height: 200px;
+    }
+}
+
+/* Стили для секции "start" */
+.start {
+    color: #fff;
+    padding: 50px 20px 30px 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.start h1 {
+    font-size: 38px;
+    font-family: "Arial Black", Arial, sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+/* Окраска первых трёх букв заголовка в секции start */
+.start h1 span.letter1 { color: #0099cc; }   /* светло-голубой */
+.start h1 span.letter2 { color: #002384; }   /* голубой потемнее */
+.start h1 span.letter3 { color: #ff3333; }   /* красный */
+
+.start p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .start {
+        padding: 30px 10px 20px 10px;
+        border-radius: 0 0 10px 10px;
+    }
+    .start h1 {
+        font-size: 26px;
+    }
+    .start p {
+        font-size: 16px;
+    }
+}
+
+#btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    color: #fff;
+    background: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 
+        
+        background-image 0.5s,
+        color 0.3s,
+        transform 0.5s;
+}
+
+#btn:hover {
+    background-image: url(./img/background\ \ btn.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 12px rgba(171, 171, 171, 0.25);
+    color: gold;
+}
+/* Стили для секции "xaractictics" */
+.xaractictics {
+    background: #232526;
+    color: #fff;
+    padding: 40px 20px 30px 20px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    box-shadow: 0 4px 16px rgba(202, 202, 202, 0.1);
+    text-align: center;
+}
+
+.xaractictics h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    color: #ffcc00;
+    font-family: "Arial Black", Arial, sans-serif;
+}
+
+.xaractictics ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.xaractictics ul li {
+    background: rgba(255,255,255,0.05);
+    margin-bottom: 12px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s;
+}
+
+.xaractictics ul li:last-child {
+    margin-bottom: 0;
+}
+
+.xaractictics ul li:hover {
+    background: rgba(255,204,0,0.10);
+    color: #ffcc00;
+}
+
+@media (max-width: 700px) {
+    .xaractictics {
+        padding: 25px 5px 15px 5px;
+        border-radius: 10px;
+    }
+    .xaractictics h2 {
+        font-size: 20px;
+    }
+    .xaractictics ul li {
+        font-size: 15px;
+        padding: 10px 8px;
+    }
+}
+
+/* Стили для фотогалереи */
+.photogallery {
+    padding: 40px 20px;
+    background: #232526;
+    border-radius: 20px;
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    text-align: center;
+}
+
+.photogallery h2 {
+    color: #ffcc00;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-family: "Arial Black", Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #18191a;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(255,204,0,0.18);
+    z-index: 2;
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .photogallery {
+        padding: 20px 5px;
+        border-radius: 10px;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .gallery img {
+        height: 110px;
+    }
+}
+
+.letter1 { color: #0099cc; }   /* светло-голубой */
+.letter2 { color: #002384; }   /* голубой потемнее */
+.letter3 { color: #ff3333; }   /* красный */
+
+
+.comments {
+    padding: 50px 20px; /* Отступы сверху и снизу */
+    text-align: center; /* Центрирование текста */
+}
+
+.comments__container {
+    max-width: 600px; /* Ограничиваем ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+.comments__container h2 {
+    font-size: 28px; /* Размер заголовка */
+    font-family: "Arial", sans-serif;
+    color: #ffcc00; /* Тёмный цвет текста */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.comments__form {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы формы в колонку */
+    gap: 15px; /* Расстояние между элементами */
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column; /* Располагаем метки и поля ввода в колонку */
+    text-align: left; /* Выравнивание текста меток */
+}
+
+.form__group label {
+    font-size: 16px; /* Размер текста метки */
+    font-family: "Arial", sans-serif;
+    color: #ffffff; /* Серый цвет текста */
+    margin-bottom: 5px; /* Отступ снизу */
+}
+
+.form__group input,
+.form__group textarea {
+    width: 100%; /* Поля занимают всю ширину контейнера */
+    padding: 10px; /* Внутренние отступы */
+    font-size: 16px; /* Размер текста */
+    font-family: "Arial", sans-serif;
+    border: 1px solid #ccc; /* Граница поля */
+    border-radius: 5px; /* Скруглённые углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Плавный переход */
+}
+
+.form__group input:focus,
+.form__group textarea:focus {
+    border-color: #e5ff00; /* Синий цвет границы при фокусе */
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3); /* Усиление тени при фокусе */
+    outline: none; /* Убираем стандартный фокус */
+}
+
+.form__button {
+    padding: 10px 20px; /* Отступы кнопки */
+    font-size: 16px; /* Размер текста кнопки */
+    font-family: "Arial", sans-serif;
+    color: rgb(0, 0, 0); /* Белый текст */
+    background-color: #ffcc00; /* Синий фон */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скруглённые углы */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход */
+}
+
+.form__button:hover {
+    transform: scale(1.05); /* Лёгкое увеличение кнопки */
+}
+
+.thank-you-message {
+    font-size: 32px;
+    font-family: "Arial", sans-serif;
+    color: #ffcc00; /* Зелёный цвет текста */
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold; /* Жирный текст */
+}
+/* Центрирование кнопки "узнать больше" */
+#btn {
+    display: block;
+    margin: 30px auto 0 auto; /* сверху 30px, по бокам auto, снизу 0 */
+}
+
+/* Центрирование секции VIDEO */
+.VIDEO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px auto 0 auto;
+    max-width: 900px;
+}
+.VIDEO h2 {
+       color: #ffcc00;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-family: "Arial Black", Arial, sans-serif;
+    letter-spacing: 1px;
+}
+.VIDEO iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.footer {
+    background-color: #333; /* Тёмный фон */
+    color: white; /* Белый текст */
+    padding: 30px 20px; /* Отступы */
+    text-align: center; /* Центрирование текста */
+}
+
+.footer__container {
+    max-width: 1200px; /* Ограничиваем ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+.footer__links {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0 0 20px 0; /* Отступ снизу */
+    display: flex;
+    justify-content: center; /* Центрируем ссылки */
+    gap: 20px; /* Расстояние между ссылками */
+}
+
+.footer__links li a {
+    text-decoration: none; /* Убираем подчёркивание */
+    color: white; /* Белый текст */
+    font-size: 16px; /* Размер текста */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+.footer__links li a:hover {
+    color: #ffcc00; /* Жёлтый цвет при наведении */
+}
+
+.footer__social {
+    margin: 20px 0; /* Отступы сверху и снизу */
+    display: flex;
+    justify-content: center; /* Центрируем ссылки */
+    gap: 20px; /* Расстояние между ссылками */
+}
+
+.social__link {
+    text-decoration: none; /* Убираем подчёркивание */
+    color: white; /* Белый текст */
+    font-size: 16px; /* Размер текста */
+    display: flex;
+    align-items: center; /* Центрируем текст и иконку по вертикали */
+    gap: 10px; /* Расстояние между иконкой и текстом */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+.social__link img {
+    width: 24px; /* Размер иконки */
+    height: 24px;
+}
+
+.social__link:hover {
+    color: #ffcc00; /* Жёлтый цвет при наведении */
+}
+
+.footer__copyright {
+    font-size: 14px; /* Размер текста */
+    color: #aaa; /* Серый цвет текста */
+    margin-top: 20px; /* Отступ сверху */
+}

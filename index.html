@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-Vik</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/Логотип.png" type="image/x-icon">
+</head>
+
+<body>
+     <header>
+        <div class="header">
+            <div class="logo">
+                <img src="./img/Логотип.png" alt="Logo">
+                <h1>Car-Vik</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="#xaractictics">О машине</a></li>
+                    <li><a href="#comments">Отзыв</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section id="start" class="start">
+    <h1>
+        <span class="letter1">B</span><span class="letter2">M</span><span class="letter3">W</span> E36
+    </h1>
+    <p> 3-й серии немецкого автоконцерна BMW, выпускавшееся с 1990 по 2000 год. Модели этого поколения стали больше, получили элегантный обтекаемый кузов и изначально создавались как четырёхдверные, в отличие от в основном двухдверных автомобилей второго поколения.</p>
+
+
+<section class="slider">
+    <div class="slider__container">
+        <div class="slider__wrapper">
+            <div class="slider__item"><img src="./img/бмв 1.jpg" alt="Slide 1"></div>
+            <div class="slider__item"><img src="./img/bmw 2.jpg" alt="Slide 2"></div>
+            <div class="slider__item"><img src="./img/bmw 3.jpg" alt="Slide 3"></div>
+            <div class="slider__item"><img src="./img/bmw 4.jpg" alt="Slide 4"></div>
+            <div class="slider__item"><img src="./img/bmw 5.jpg" alt="Slide 5"></div>
+        </div>
+        <button class="slider__arrow slider__arrow--prev">&#10094;</button>
+        <button class="slider__arrow slider__arrow--next">&#10095;</button>
+    </div>
+</section>
+</section>
+    <button id="btn">узнать больше</button>
+
+<section id="xaractictics" class="xaractictics">
+    <h2>Технические характеристики</h2>
+    <ul>
+        <li>Двигатель: двигатель BMW M51 с турбонаддувом</li>
+        <li>Мощность: 150 л.с.</li>
+        <li>Разгон до 100 км/ч: 11,7 сек</li>
+        <li>Максимальная скорость: 198 км/ч</li>
+        <li>Расход топлива: 11,2 л/100 км</li>
+    </ul>
+
+</section>
+
+<section class="photogallery">
+    <h2>Галерея</h2>
+    <div class="gallery">
+        <img src="./img/bmw6.webp" alt="BMW E36 1">
+        <img src="./img/bmw7.webp" alt="BMW E36 2">
+        <img src="./img/bmw8.webp" alt="BMW E36 3">
+        <img src="./img/bmw 9.jpg" alt="BMW E36 4">
+        <img src="./img/bmw 10.jpg" alt="BMW E36 5">
+        <img src="./img/bmw 11.webp" alt="BMW E36 6">
+        <img src="./img/bmw 12.jpg" alt="BMW E36 7">
+        <img src="./img/bmw 13.webp" alt="BMW E36 8">
+        <img src="./img/bmw 14.webp" alt="BMW E36 9">
+    </div>
+</section>
+
+<section class="VIDEO">
+    <h2>Видео о   <span class="letter1">B</span><span class="letter2">M</span><span class="letter3">W</span> </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y3mseiaZWjU?si=M1fnF_WGxlsUvbeZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</section>
+
+<section id="comments" class="comments">
+    <div class="comments__container">
+        <h2>Оставьте отзыв про машину</h2>
+        <form id="commentsForm" class="comments__form">
+            <div class="form__group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form__group">
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" name="surname" placeholder="Введите вашу фамилию" required>
+            </div>
+            <div class="form__group">
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+            </div>
+            <div class="form__group">
+                <label for="review">Отзыв:</label>
+                <textarea id="review" name="review" rows="5" placeholder="Напишите ваш отзыв" required></textarea>
+            </div>
+            <button type="button" id="submitButton" class="form__button">Отправить</button>
+        </form>
+        <p id="thankYouMessage" class="thank-you-message" style="display: none;">Спасибо за ваш отзыв!</p>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer__container">
+        <ul class="footer__links">
+            <li><a href="#start">Главная</a></li>
+            <li><a href="#xaractictics">Характеристики</a></li>
+            <li><a href="#fotogallery">Галерея</a></li>
+            <li><a href="#video">Видео</a></li>
+            <li><a href="#comments">Отзывы</a></li>
+        </ul>
+        <div class="footer__logo">
+            <img src="./img/Логотип.png" alt="Логотип Toyota Mark II">
+        </div>
+        <div class="footer__social">
+            <a href="https://www.instagram.com/bolshoikapitan/" target="_blank" class="social__link">
+                <img src="./img/instagram (5).png" alt="Instagram"> Instagram
+            </a>
+            <a href="https://t.me/Thebig_cap" target="_blank" class="social__link">
+                <img src="./img/telegram (5).png" alt="Telegram"> Telegram
+            </a>
+            <a href="https://github.com/bigcapitan" target="_blank" class="social__link">
+                <img src="./img/icons8-github-32.png" alt="GitHub"> GitHub
+            </a>
+        </div>
+        <p class="footer__copyright">© 2025 Toyota Mark II. Все права защищены.</p>
+    </div>
+</footer>
+
+</body>
+<script src="./script.js"></script>
+</html>
